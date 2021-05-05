@@ -1,0 +1,38 @@
+/* see the template: https://www.templatemonster.com/fr/modeles-site-tipo-103660.html#thumbnail-1 */
+
+$color1: #f8a22e;
+$color2: #841c7d;
+$color3: #000000;
+
+body {
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.carousel {
+    .carousel-item {
+        height: 500px;
+        img {
+            position: absolute;
+            object-fit:cover;
+            top: 0;
+            left: 0;
+            min-height: 500px;
+        }
+      }
+    h1 {
+        color:#841c7d;
+    }
+}
+
+.vl {
+    border-left: 2px solid $color3;
+    height: 400px;
+    margin-top: 1em;
+}
+
+footer {
+    li {
+        padding: 1em 0 1em 0;
+    }
+    
+}
