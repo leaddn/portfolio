@@ -1,9 +1,11 @@
-$grey-dark: #2F3B4B;
-$grey-light: #4F5256;
-$white: #f2f2f2;
+$color1: #2F3B4B; //dark blue
+$color2: #4F5256; //light grey
+$color3: #f2f2f2; // white
 $lavender: #d4dcff;
-$black: #333;
-$water-green: #A0DAA9;
+$color4: #333; // black
+$color5: #A0DAA9; //watergreen
+
+$shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
 body {
     margin: 0;
@@ -14,9 +16,19 @@ body {
       background-color: #333;
       background-repeat: no-repeat;
       background-size: cover;*/
-    background-color: $grey-dark;
+    background-color: $color1;
   }
-  
+
+.logo {
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: $shadow;
+  margin: 0em 1em 0em 1em;
+}
+
+/*
   .main_head {
     display: flex;
     flex-direction: column;
@@ -24,28 +36,26 @@ body {
     height: fit-content;
     width: auto;
     text-align: center;
-    button {
-        margin-bottom: 1em;
-    }
   } 
-  
+ */ 
   footer {
     text-align: center;
-    color: $white;
+    color: $color3;
   }
   
+/* 
   nav {
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    background-color: $grey-dark;
+    background-color: $color1;
     width: auto;
   
   }
-  
+
   nav a {
     float: left;
-    color: $white;
+    color: $color3;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -57,43 +67,41 @@ body {
       flex-direction: column;
     }
   }
+
   nav a:hover {
-    background-color: $white;
-    color: $black;
+    background-color: $color3;
+    color: $color4;
   }
   
   nav a:active {
     background-color: royalblue;
-    color: $white;
+    color: $color3;
   }
-  
-  nav-right {
-    float: right;
-  }
-  
+*/
   h1 {
-      color: $white; 
+      color: $color3; 
       /*font-size: 90px;*/
       text-align: center;
-      background-color: rgba(45, 45, 45, 0.1);
+      //background-color: rgba(45, 45, 45, 0.1);
   }
   
   hr {
     width: 25%;
     height: 5px;
     text-align: left;
-    background-color: $water-green;
+    background-color: $color5;
     border: none;
   }
   
   h2 {
     text-align: center;
-    color: $white;
+    color: $color3;
   }
   
   .icone {
     width: auto;
     height: 1em;
+    margin: 0.5em;
   }
   
   .sharebuttons_container {
@@ -112,13 +120,6 @@ body {
     height: auto;
   }
   
-  
-  .container3 {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
   .info {
     text-align: center;
     display: flex;
@@ -130,11 +131,6 @@ body {
   .about {
     flex: 1;
     min-width: 40%;
-    
-    
-    /*
-    padding-left: 2em;
-    padding-right: 2em;*/
   }
   
   .work {
@@ -171,37 +167,40 @@ body {
   
   
   
-  ul {
+ .info-text {
     text-align: left;
+    i {
+      margin-right: 0.5em;
+    }
     }
   
   section {
-      background-color: $grey-light;
+      background-color: $color2;
       border-radius: 10px;
       width:fit-content;
       height: fit-content;
       padding: 1em;
       margin: 1em;
       opacity: 80%;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      box-shadow: $shadow;
     }
   
   button {
-      background-color: $black;
-      color: $white;
+      background-color: $color4;
+      color: $color3;
       overflow: hidden;
       border-radius: 5px;
       text-decoration: none;
       padding: 10px 0px;
       text-align: center;
       border: none;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      box-shadow: $shadow;
   }
   
   
     button a{
       font-family: "Montserrat";
-      color: $white;
+      color: $color3;
       border: none;
       text-decoration: none;
       padding: 15px 32px;
@@ -210,18 +209,17 @@ body {
     }
   
   button a:hover {
-    background-color: $white;
-    color: $black;
+    background-color: $color3;
+    color: $color4;
     
   }
-  
-  
+
   img.hublot {
       height: 6em;
       width: 6em;
       border-radius: 50%;
       object-fit: cover;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      box-shadow: $shadow;
       margin: 1em 0em 1em 0em;
   }
   
@@ -287,9 +285,9 @@ body {
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid white;
+    border: medium solid $color3;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
+    border-color: transparent transparent transparent $color3;
   }
   
   /* Add arrows to the right container (pointing left) */
@@ -301,9 +299,9 @@ body {
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid white;
+    border: medium solid $color3;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent $color3 transparent transparent;
   }
   
   /* Fix the circle for containers on the right side */
@@ -314,7 +312,7 @@ body {
   /* The actual content */
   .content {
     padding: 1em 2em;
-    background-color: white;
+    background-color: $color3;
     position: relative;
     border-radius: 6px;
   }
@@ -336,9 +334,9 @@ body {
   /* Make sure that all arrows are pointing leftwards */
     .timecontainer::before {
       left: 60px;
-      border: medium solid white;
+      border: medium solid $color3;
       border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
+      border-color: transparent $color3 transparent transparent;
     }
   
   /* Make sure all circles are at the same spot */
@@ -359,73 +357,8 @@ body {
   /* ===================================== */
   /* ===================================== */
   
-  /* flip card */
-  .flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .contact_button .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
-  
-  /* Contact form */
-  :required
-  {
-      background-color: red;
-  }
-  .container_form {
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    border-radius: 5px;
-    background-color: $white;
-    padding: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    transform: rotateY(180deg);
-  }
-  
-  
-  
-  /* Style the back side */
-  /*
-  .flip-card-back {
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
-  }
-  */
   .white_bg {
-    background-color: $white;
+    background-color: $color3;
     border-radius: 5px;
     padding: 0.5em 1em 0.5em 1em;
   }
@@ -434,73 +367,18 @@ body {
     margin-top: 1em;
     width: auto;
   }
-  
-  /* CONTACT FORM */
-  .contact {
-    min-width: 50%;
-  }
-  
-  .info_form {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    /*padding-bottom: 1em;*/
-  }
-  
-  .info_form img {
-    margin: 0em 1em 0em 0em;
-  }
-  
-  .info_form input {
-    /*border: none;*/
-    height: 2em;
-    width: 50%;
-    /*background-color: #a0daa9;*/
-  }
-  
-  .info_form input:hover {
-    background-color:$white;
-  }
-  
-  .info_form hr {
-    background-color: #7c7c7c;
-    width: 50%;
-    margin-left: 0%;
-    margin-top: 0%;
-  }
-  
-  .info_form label {
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
-  }
-  
-  /* =============== */
-  
-  .no_border {
-    border: none;
-  }
-  
-  .shadow {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  }
-  
-  .green {
-    background-color: #a0daa9;
-  }
-  
-  .green_shadow {
-    background-color: #78a57f;
-  }
 
+ /* Skills */
   .techno {
     display: flex;
     flex-direction: row;
     div {
       border-radius: 5px;
       text-align: center;
-      color: $white;
+      color: $color3;
       padding: 0.25em;
     }
+
     .techno_html {
       background-color: orangered;
     }
@@ -513,4 +391,29 @@ body {
     .techno_boot {
       background-color: #7952b3;
     }
+  }
+
+  /* Carousel */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  .carousel {
+    .carousel-item {
+      height: 500px;
+      img {
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+
+      }
+    }
+  }
+  .hello {
+    font-size: 1.5em;
+  }
+  .lea {
+    color: $color5;
+    font-size: 3em;
   }

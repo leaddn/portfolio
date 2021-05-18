@@ -1,16 +1,138 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Léa's Portfolio</title>
+        <!-- Bootstrap CSS -->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
         <link rel="stylesheet" href="main.css">
      
-<style>
-    /*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');*/
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
-    </style>
+        <style>
+        /*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');*/
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+        </style>
+
+        <!--Font awesome icons-->
+        <script src="https://kit.fontawesome.com/eaf337826d.js" crossorigin="anonymous"></script>
     </head>
     
     <body>
-        <header class="main_head">
+        <!-- Header -->
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="col navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="logo" src="./img/avatar.png" alt="logo">
+                        Léa's Portfolio
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbarContent" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                               <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                               <a class="nav-link" href="#">Portfolio</a>
+                            </li>
+                         </ul>
+                     </div>
+                </nav>
+            </div>
+        </div>
+<!-- Contenu -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+            
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                          <li data-target="#demo" data-slide-to="0" class="active"></li>
+                          <li data-target="#demo" data-slide-to="1"></li>
+                          <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+                        
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            
+                                <img src="img/lea_bg.png" alt="img0" width="500" height="250">
+                                
+                                <div class="carousel-caption">
+                                    <h1 class="text-left hello">Hello,</h1>
+                                        <h1 class="text-left lea">I'm Léa</h1>
+                                        <h1 class="text-left dev">Fullstack Web Developper
+                                        <!--Icons in bootstrap. Follow the link: https://icons.getbootstrap.com/-->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-emoji-laughing-fill" viewBox="0 0 16 16">
+                                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5c0 .501-.164.396-.415.235C6.42 6.629 6.218 6.5 6 6.5c-.218 0-.42.13-.585.235C5.164 6.896 5 7 5 6.5 5 5.672 5.448 5 6 5s1 .672 1 1.5zm5.331 3a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zm-1.746-2.765C10.42 6.629 10.218 6.5 10 6.5c-.218 0-.42.13-.585.235C9.164 6.896 9 7 9 6.5c0-.828.448-1.5 1-1.5s1 .672 1 1.5c0 .501-.164.396-.415.235z"/>
+                                          </svg>
+                                          
+                                    </h1>
+                                    <a class="btn btn-outline-light" href="#" role="button">Hire me !</a>
+                                  </div>
+                              </div>
+                          <div class="carousel-item">
+                            
+                            <!--<img src="img/beverage.jpeg" alt="img1" width="500" height="250">-->
+                            
+                            <div class="carousel-caption">
+                                <h1>Project 1
+                                    <!--Icons in bootstrap. Follow the link: https://icons.getbootstrap.com/-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-emoji-laughing-fill" viewBox="0 0 16 16">
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5c0 .501-.164.396-.415.235C6.42 6.629 6.218 6.5 6 6.5c-.218 0-.42.13-.585.235C5.164 6.896 5 7 5 6.5 5 5.672 5.448 5 6 5s1 .672 1 1.5zm5.331 3a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zm-1.746-2.765C10.42 6.629 10.218 6.5 10 6.5c-.218 0-.42.13-.585.235C9.164 6.896 9 7 9 6.5c0-.828.448-1.5 1-1.5s1 .672 1 1.5c0 .501-.164.396-.415.235z"/>
+                                      </svg>
+                                      
+                                </h1>
+                                <a class="btn btn-outline-dark" href="#" role="button">See !</a>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <!--<img src="img/cake.jpeg" alt="img2" width="500" height="250">-->
+                            <div class="carousel-caption">
+                                <h1>Project 2
+                                    <!--Icons in bootstrap. Follow the link: https://icons.getbootstrap.com/-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-emoji-laughing-fill" viewBox="0 0 16 16">
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5c0 .501-.164.396-.415.235C6.42 6.629 6.218 6.5 6 6.5c-.218 0-.42.13-.585.235C5.164 6.896 5 7 5 6.5 5 5.672 5.448 5 6 5s1 .672 1 1.5zm5.331 3a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zm-1.746-2.765C10.42 6.629 10.218 6.5 10 6.5c-.218 0-.42.13-.585.235C9.164 6.896 9 7 9 6.5c0-.828.448-1.5 1-1.5s1 .672 1 1.5c0 .501-.164.396-.415.235z"/>
+                                      </svg>
+                                      
+                                </h1>
+                                <a class="btn btn-outline-dark" href="#" role="button">See !</a>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <!--<img src="img/milkshake.jpeg" alt="img3" width="500" height="250">-->
+                            <div class="carousel-caption">
+                                <h1>Project 3
+                                    <!--Icons in bootstrap. Follow the link: https://icons.getbootstrap.com/-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-emoji-laughing-fill" viewBox="0 0 16 16">
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5c0 .501-.164.396-.415.235C6.42 6.629 6.218 6.5 6 6.5c-.218 0-.42.13-.585.235C5.164 6.896 5 7 5 6.5 5 5.672 5.448 5 6 5s1 .672 1 1.5zm5.331 3a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zm-1.746-2.765C10.42 6.629 10.218 6.5 10 6.5c-.218 0-.42.13-.585.235C9.164 6.896 9 7 9 6.5c0-.828.448-1.5 1-1.5s1 .672 1 1.5c0 .501-.164.396-.415.235z"/>
+                                      </svg>
+                                      
+                                </h1>
+                                <a class="btn btn-outline-dark" href="#" role="button">See !</a>
+                              </div>
+                          </div>
+                        </div>
+                        
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+            <!--
             <nav>
                 <a class="active" href="/index.html">Home</a>
                 <a href="#contact">Contact</a>
@@ -31,318 +153,275 @@
             </div>
             
  
-            <!--
+            
             <h4>What are you doing here ?</h4>
             <button>Changer d'utilisateur</button>
             -->
-
-    </header>
         
-
-        <container class="container3">
-            <section class="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <section class="info">
                 
             
-                <h2>Info</h2>
-                <div>
-                    <img class="hublot" src="./img/avatar.png">
-                </div>
-                
-                <div class="white_bg">
-                    <ul>
-                        <li>Paris, France</li>
-                        <li><a href="mailto: leadieudonat@gmail.com" target="_blank">leadieudonat@gmail.com</a></li>
-                        <li>+33 6 61 63 98 82</li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <button class="download"><a href="./doc/CV_2021_Léa_Dieudonat.pdf" download>Download CV</a></button>
-                </div>
-                <div class="sharebuttons_container">
-                    <a href="https://github.com/leaddn/" target="_blank">
-                        <img src="./img/logo/github.png" alt="Git" class="sharebuttons">
-                    </a>
-                    
-                    <a href="https://www.linkedin.com/in/lea-dieudonat/" target="_blank">
-                        <img src="./img/logo/lin.png" alt="linkedin"  class="sharebuttons">
-                    </a>
-                
-                    <a href="mailto: leadieudonat@gmail.com" target="_blank">
-                        <img src="./img/logo/mail.png" alt="mail" class="sharebuttons">
-                        
-                    </a>
-                </div>
-            </section>   
-            <section class="about" id="about">
-                <img src="img/logo/about.png" width="50">
-                <h2>About</h2>
-        
-                    <p class="white_bg">
-                        I’m Léa, I study web development at AFPA and I’m searching for a 2-months internship in November. 
-                        <br>
-                        <br>
-                        I've always been a coder at heart - 
-                        having the chance to learn and develop myself is what motivates me 
-                        more than anything else. 
-                        <br>
-                        I also love to combine my 
-                        creative side with problem solving skills.
-                        <br> 
-                        I'm organised, detail-oriented, motivated, 
-                        and bring a unique perspective to all of my coding projects.
-                    </p>
-                
-            </section>
-
-            <section class="portfolio" id="portfolio">
-                <h2>Portfolio</h2>
-                <div class="subsection">
-                    <div class="white_bg">
-                        <h3>Afpa website</h3>
-                        <p>Plateforme numérique responsive pour collecter les données des futurs stagiaires de l'AFPA.</p>
-                        <div class="techno"><div class="techno_html">HTML</div><div class="techno_css">CSS3</div><div class="techno_sass">Sass</div></div>
-                        <button><a href="https://leaddn.github.io/afpa/">Voir</a></button>
-                    </div>
-    
-                    <div class="white_bg">
-                        <h3>Myuka project</h3>
-                        <p>Scan de produits alimentaires pour identifier leur composition et leur impact sur la santé.</p>
-                        <div class="techno"><div class="techno_html">HTML</div><div class="techno_css">CSS3</div><div class="techno_sass">Sass</div></div>
-                        <button><a href="https://leaddn.github.io/myuka/">Voir</a></button>
-                    </div>
-
-                    <div class="white_bg">
-                        <h3>Baloo's Kitchen</h3>
-                        <p>In french we say "Bon Appétit".</p>
-                            <div class="techno"><div class="techno_html">HTML</div><div class="techno_css">CSS3</div><div class="techno_sass">Sass</div><div class="techno_boot">Bootstrap</div></div>
-                        <button><a href="./bootstrap/index.html">Voir</a></button>
-                    </div>
-                    
-                </div>
-                
-            </section>
-            
-            <section class="skills">
-                <div class="subsection">
-                    <div class="white_bg">
-                        <header><h3>Design</h3></header>
-                        
-                        <h4>Technical skills</h4>
-                        <p>UI, UX, Web, Mobile, Apps</p>
-                        <h4>Tools</h4>
-                        <p>Figma</p>
-                    </div>
-                    <div class="white_bg">
-                        
-                        <header><div><img src="img/logo/skills.png" class="icone"></div><h3>Development</h3></header>
-                        <h4>Technical skills</h4>
-                        <div class="techno"><div class="techno_html">HTML</div><div class="techno_css">CSS3</div><div class="techno_sass">Sass</div><div class="techno_boot">Bootstrap</div></div>
-                        
-                        <p>Python, PHP, Javascript</p>
-                        <h4>Tools</h4>
-                        <p>VS Code, Atom, Github, Terminal, Codepen, Coffee ☕</p>
-                    </div>
-                    <div class="white_bg">
-                        <header><h3>Management</h3></header>
-                        <h4>Technical skills</h4>
-                        <p>???</p>
-                        <h4>Tools</h4>
-                        <p>Trello, Slack, Discord</p>
-                    </div>
-                </div>
-            </section>
-    
-            <section class="languages">
-                <h2>Languages</h2>
-                <ul>
-                    <li>French</li>
-                    <li>English</li>
-                    <li>German</li>
-                </ul>
-            </section>
-    
-        
-        <section class="work">
-            <h2 id="work">Work</h2>
-            <div class="timeline">
-                <div class="timecontainer right">
-                    <div class="content">
-                        <h3>2021</h3>
-                        <strong>Animatrice</strong>
-                        <p>
-                        Île de France
-                        <br>
-                        Encadrement d'enfants en accueils et séjours de loisirs
-                        <ul>
-                            <li>2021 : Mairie de Fosses</li>
-                            <li>2017 : Mairie de Marly</li>
-                            <li>2016 : Mairie de Goussainville</li>
-                            <li>2015 : Mairie de Goussainville</li>
-                        </ul>
-                            </p>
-                    </div>
-                    </div>
-                <div class="timecontainer right">
-                <div class="content">
-                    <h3>2020</h3>
-                    <strong>Stagiaire R&D Data Management Office (DMO)</strong>
-                    <p>
-                    PRICEWATERHOUSECOOPERS AUDIT / Luxembourg
-                    <br>
-                    Création d'une ontologie pour les données financières:
-                    
-                    <ul>
-                        <li>Data extraction</li>
-                        <li>Text comparison</li>
-                        <li>Clustering</li>
-                    </ul>
-                    
-                    </p>
-                </div>
-                </div>
-                <div class="timecontainer right">
-                <div class="content">
-                    <h3>2018</h3>
-                    <strong>Stagiaire en médiation et communication</strong>
-                    <p>
-                    Espace Germinal / Paris
-                    <ul>
-                        <li>Organisation et gestion d'événements culturels</li>
-                        <li>Diffusion des supports médias et contact des partenaires</li>
-                    </ul>
-                        </p>
-                </div>
-                </div>
-                <div class="timecontainer right">
-                    <div class="content">
-                        <h3>2018</h3>
-                        <strong>Animatrice</strong>
-                        <p>EEDF / Grandcamp-Maisy
-                            <br>
-                            Séjours adaptés pour adultes en situation de handicap 
-                            </p>
-                    </div>
-                    </div>
-                    
-            </div>
-        </section>
-
-        <section class="education">
-            <h2 id="education">Education</h2>
-            <div class="timeline">
-                <div class="timecontainer right">
-                    <div class="content">
-                        <h3>2021/2022</h3>
-                        <strong>Formation Web development - RNCP III</strong>
-                        <p>
-                        AFPA
-                        <br>
-                        Paris, France (remotely)
-                        <ul>
-                            <li>Back-end</li>
-                            <li>Front-end</li>
-                            <li>Responsive</li>
-                        </ul>
-                        #HTML #CSS #JAVASCRIPT #PHP #SQL #WORDPRESS #SYMFONY
-                            </p>
-                    </div>
-                    </div>
-                <div class="timecontainer right">
-                    <div class="content">
-                        <h3>2018/2020</h3>
-                        <strong>Master Traitement Automatique du Langage (NLP)</strong>
-                        <p>
-                        IDMC - Université de Lorraine
-                        <br>
-                        Nancy, France
-                        <ul>
-                            <li>Machine Learning</li>
-                            <li>Mathématiques</li>
-                            <li>Data Science</li>
-                            <li>Neural Network</li>
-                        </ul>
-                        #PYTHON #GIT
-                            </p>
-                    </div>
-                    </div>
-                <div class="timecontainer right">
-                    <div class="content">
-                        <h3>2016/2018</h3>
-                        <strong>Licence de Sciences du Langage</strong>
-                        <p>
-                        Université Paris Descartes
-                        <br>
-                        Paris
-                        
-                        </p>
-                    </div>
-                </div>
-                <div class="timecontainer right">
-                    <div class="content">
-                        <h3>2014</h3>
-                        <strong>Baccalauréat Littéraire</strong>
-                        <p>
-                        Lycée Gérard de Nerval
-                        <br>
-                        Luzarches
-                            </p>
-                    </div>
-                </div>
-            </div>  
-        </section>
-        <section id="contact" class="contact">
-            <form method="post" action="traitement.php">
-                <fieldset class="green no_border shadow">
-                    <legend>Vos coordonnées</legend>
-
-                    <div class="info_form">
-                        
-                        <label for="prénom" autofocus required><img src="./img/icone/name.png" class="icone">Nom Prénom :</label>
-                       
-                        <input type="text" name="prénom" id="prénom" placeholder="Nom Prénom" class="no_border green_shadow"/>
-                    
-                    </div>
-                    
-                    
-                    <div class="info_form">
-                        
-                        <label for="email" required><img src="./img/icone/mail.png" class="icone">E-mail :</label>
-                        
-                    <input type="email" name="email" id="email" class="no_border green_shadow"/>
-                   
-                    </div>
-                    
-                    
-                    <div class="info_form">
-                        
-                        <label for="tel"><img src="./img/icone/telephone.png" class="icone">Téléphone :</label>
-                        
-                        <input type="tel" name="tel" id="tel" class="no_border green_shadow"/>
-                        
-                    </div>
-                    
-                    <!--
-                    <br>
-                    <label for="pass">Votre mot de passe :</label>
-                    <input type="password" name="pass" id="pass" />
-                        -->
-                        <div class="info_form">
-                            
-                            <label for="msg" required><img src="./img/icone/msg.png" class="icone">Votre message :</label>
-                            <textarea name="msg" id="msg"></textarea>
+                        <h2>Info</h2>
+                        <div>
+                            <img class="hublot" src="./img/avatar.png">
                         </div>
-                    
+                        
+                        <div class="white_bg info-text">
+                            
+                                <p><i class="fas fa-map-marker-alt"></i>Paris, France</p>
+                                <p><i class="fas fa-envelope"></i><a href="mailto: leadieudonat@gmail.com" target="_blank">leadieudonat@gmail.com</a></p>
+                                <p><i class="fas fa-phone"></i>+33 6 61 63 98 82</p>
+                                <p><img src="./img/icone/france.png" alt="france" class="icone"><img src="./img/icone/uk.png" alt="uk" class="icone">
+                                </p>
+                        </div>
+                        
+                        <div>
+                            <button class="download"><a href="./doc/CV_2021_Léa_Dieudonat.pdf" download>Download CV</a></button>
+                        </div>
+                        <div class="sharebuttons_container">
+                            
+                            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/leaddn/" role="button"
+                                  ><i class="fab fa-github"></i
+                                ></a>
+        
+                            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/lea-dieudonat/" role="button"
+                                  ><i class="fab fa-linkedin-in"></i
+                                ></a>
+                        
+                            <a class="btn btn-outline-light btn-floating m-1" href="mailto: leadieudonat@gmail.com" target="_blank">
+                                <i class="fas fa-envelope"></i>
+                                
+                            </a>
+                        </div>
+                    </section> 
+                </div>
+                <div class="col-12 col-lg-6">
+                    <section class="about" id="about">
+                        <h2><i class="fas fa-info-circle"></i> About</h2>
                 
-                    <input type="submit" value="Envoyer" />
-                    </fieldset>
-                
-            </form>
-        </section>
-    </container>
+                            <p class="white_bg">
+                                I’m Léa, I study web development at AFPA and I’m searching for a 2-months internship in November. 
+                                <br>
+                                <br>
+                                I've always been a coder at heart - 
+                                having the chance to learn and develop myself is what motivates me 
+                                more than anything else. 
+                                <br>
+                                I also love to combine my 
+                                creative side with problem solving skills.
+                                <br> 
+                                I'm organised, detail-oriented, motivated, 
+                                and bring a unique perspective to all of my coding projects.
+                            </p>
+                        
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <section class="portfolio" id="portfolio">
+                        <h2>Portfolio</h2>
+                        <div class="subsection">
+                            <div class="white_bg">
+                                <h3>Afpa website</h3>
+                                <p>Plateforme numérique responsive pour collecter les données des futurs stagiaires de l'AFPA.</p>
+                                <div class="techno"><div class="techno_html">HTML</div><div class="techno_css">CSS3</div><div class="techno_sass">Sass</div></div>
+                                <button><a href="https://leaddn.github.io/afpa/">Voir</a></button>
+                            </div>
+            
+                            <div class="white_bg">
+                                <h3>Myuka project</h3>
+                                <p>Scan de produits alimentaires pour identifier leur composition et leur impact sur la santé.</p>
+                                <div class="techno"><div class="techno_html">HTML</div><div class="techno_css">CSS3</div><div class="techno_sass">Sass</div></div>
+                                <button><a href="https://leaddn.github.io/myuka/">Voir</a></button>
+                            </div>
+        
+                            <div class="white_bg">
+                                <h3>Baloo's Kitchen</h3>
+                                <p>In french we say "Bon Appétit".</p>
+                                    <div class="techno"><div class="techno_html">HTML</div><div class="techno_css">CSS3</div><div class="techno_sass">Sass</div><div class="techno_boot">Bootstrap</div></div>
+                                <button><a href="./bootstrap/index.html">Voir</a></button>
+                            </div>
+                            
+                        </div>
+                        
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <section class="skills">
+                        <div class="subsection">
+                            <div class="white_bg">
+                                <header><h3>Design</h3></header>
+                                
+                                <h4>Technologies</h4>
+                                <p>UI, UX, Web, Mobile, Apps</p>
+                                <h4>Tools</h4>
+                                <p>Figma</p>
+                            </div>
+                            <div class="white_bg">
+                                
+                                <header><div><img src="img/logo/skills.png" class="icone"></div><h3>Development</h3></header>
+                                <h4>Technologies</h4>
+                                <div class="techno"><div class="techno_html">HTML</div><div class="techno_css">CSS3</div><div class="techno_sass">Sass</div><div class="techno_boot">Bootstrap</div></div>
+                                
+                                <p>Python, PHP, Javascript</p>
+                                <h4>Tools</h4>
+                                <p>VS Code, Atom, Github, Terminal, Codepen, Coffee ☕</p>
+                            </div>
+                            <div class="white_bg">
+                                <header><h3>Management</h3></header>
+                                <h4>Technologies</h4>
+                                <p>???</p>
+                                <h4>Tools</h4>
+                                <p>Trello, Slack, Discord</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <section class="work">
+                        <h2 id="work">Work</h2>
+                        <div class="timeline">
+                            <div class="timecontainer right">
+                                <div class="content">
+                                    <h3>2021</h3>
+                                    <strong>Animatrice</strong>
+                                    <p>
+                                    Île de France
+                                    <br>
+                                    Encadrement d'enfants en accueils et séjours de loisirs
+                                    <ul>
+                                        <li>2021 : Mairie de Fosses</li>
+                                        <li>2017 : Mairie de Marly</li>
+                                        <li>2016 : Mairie de Goussainville</li>
+                                        <li>2015 : Mairie de Goussainville</li>
+                                    </ul>
+                                        </p>
+                                </div>
+                                </div>
+                            <div class="timecontainer right">
+                            <div class="content">
+                                <h3>2020</h3>
+                                <strong>Stagiaire R&D Data Management Office (DMO)</strong>
+                                <p>
+                                PRICEWATERHOUSECOOPERS AUDIT / Luxembourg
+                                <br>
+                                Création d'une ontologie pour les données financières:
+                                
+                                <ul>
+                                    <li>Data extraction</li>
+                                    <li>Text comparison</li>
+                                    <li>Clustering</li>
+                                </ul>
+                                
+                                </p>
+                            </div>
+                            </div>
+                            <div class="timecontainer right">
+                            <div class="content">
+                                <h3>2018</h3>
+                                <strong>Stagiaire en médiation et communication</strong>
+                                <p>
+                                Espace Germinal / Paris
+                                <ul>
+                                    <li>Organisation et gestion d'événements culturels</li>
+                                    <li>Diffusion des supports médias et contact des partenaires</li>
+                                </ul>
+                                    </p>
+                            </div>
+                            </div>
+                            <div class="timecontainer right">
+                                <div class="content">
+                                    <h3>2018</h3>
+                                    <strong>Animatrice</strong>
+                                    <p>EEDF / Grandcamp-Maisy
+                                        <br>
+                                        Séjours adaptés pour adultes en situation de handicap 
+                                        </p>
+                                </div>
+                                </div>
+                                
+                        </div>
+                    </section>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <section class="education">
+                        <h2 id="education">Education</h2>
+                        <div class="timeline">
+                            <div class="timecontainer right">
+                                <div class="content">
+                                    <h3>2021/2022</h3>
+                                    <strong>Formation Web development - RNCP III</strong>
+                                    <p>
+                                    AFPA
+                                    <br>
+                                    Paris, France (remotely)
+                                    <ul>
+                                        <li>Back-end</li>
+                                        <li>Front-end</li>
+                                        <li>Responsive</li>
+                                    </ul>
+                                    #HTML #CSS #JAVASCRIPT #PHP #SQL #WORDPRESS #SYMFONY
+                                        </p>
+                                </div>
+                                </div>
+                            <div class="timecontainer right">
+                                <div class="content">
+                                    <h3>2018/2020</h3>
+                                    <strong>Master Traitement Automatique du Langage (NLP)</strong>
+                                    <p>
+                                    IDMC - Université de Lorraine
+                                    <br>
+                                    Nancy, France
+                                    <ul>
+                                        <li>Machine Learning</li>
+                                        <li>Mathématiques</li>
+                                        <li>Data Science</li>
+                                        <li>Neural Network</li>
+                                    </ul>
+                                    #PYTHON #GIT
+                                        </p>
+                                </div>
+                                </div>
+                            <div class="timecontainer right">
+                                <div class="content">
+                                    <h3>2016/2018</h3>
+                                    <strong>Licence de Sciences du Langage</strong>
+                                    <p>
+                                    Université Paris Descartes
+                                    <br>
+                                    Paris
+                                    
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timecontainer right">
+                                <div class="content">
+                                    <h3>2014</h3>
+                                    <strong>Baccalauréat Littéraire</strong>
+                                    <p>
+                                    Lycée Gérard de Nerval
+                                    <br>
+                                    Luzarches
+                                        </p>
+                                </div>
+                            </div>
+                        </div>  
+                    </section>
+                </div>
+            </div>
+        </div>
+        
     
     <footer>
-        ©2021 Léa Dieudonat
+        ©2021 developped with 💙 by Léa Dieudonat
     </footer>
     <!--<script src="./scripts/main.js"></script>-->
     </body>
