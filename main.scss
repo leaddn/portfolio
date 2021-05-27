@@ -10,8 +10,8 @@ $shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 body {
     margin: 0;
     font-family: 'Montserrat';
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
       /*background-image: url('./img/1560285.jpeg');
       background-color: #333;
       background-repeat: no-repeat;
@@ -94,8 +94,23 @@ body {
   }
   
   h2 {
-    text-align: center;
+    text-align: left;
     color: $color3;
+  }
+  hr {
+    width: 2em;
+      height: 0.5em;
+      text-align: left;
+      background-color: $color5;
+      border: none;
+      margin: 0px;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+  h4 {
+    font-size: 1.25em;
   }
   
   .icone {
@@ -129,8 +144,11 @@ body {
   }
   
   .about {
-    flex: 1;
-    min-width: 40%;
+    background-color: $color2;
+  }
+
+  .about,.info {
+    height: auto;
   }
   
   .work {
@@ -174,17 +192,37 @@ body {
     }
     }
   
+
   section {
-      background-color: $color2;
+    background-color: $color2;
       border-radius: 10px;
-      width:fit-content;
-      height: fit-content;
+      width: 100%;
+      height: 100%;
       padding: 1em;
       margin: 1em;
-      opacity: 80%;
+      //opacity: 80%;
       box-shadow: $shadow;
     }
   
+  .portfolio,.skills {
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .portfolio {
+    button {
+      width: fit-content;
+      margin-top: 0.5em;
+      a {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
   button {
       background-color: $color4;
       color: $color3;
@@ -372,11 +410,13 @@ body {
   .techno {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     div {
       border-radius: 5px;
       text-align: center;
       color: $color3;
       padding: 0.25em;
+      font-size: 0.75em;
     }
 
     .techno_html {
