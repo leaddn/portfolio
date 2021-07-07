@@ -1,15 +1,38 @@
-$color1: #2F3B4B; //dark blue
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Staatliches&display=swap');
+
+
+//$color1: #2F3B4B; //dark blue
+$color1: #070339;
 $color2: #4F5256; //light grey
 $color3: #f2f2f2; // white
 $lavender: #d4dcff;
 $color4: #333; // black
 $color5: #A0DAA9; //watergreen
+$color6: #06fdd8;
+$black: #1e1e1e;
 
 $shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
+.sticky-bg {
+  background-image: url(../img/svg/repeat_wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 500px;
+}
+
+.black-bg {
+  background-color: $black;
+}
+
+.blue-bg {
+  background-color: $color1;
+}
+
 body {
     margin: 0;
-    font-family: 'Montserrat';
+    font-family: 'Open Sans', sans-serif;
     height: 100%;
     width: 100%;
       /*background-image: url('./img/1560285.jpeg');
@@ -17,17 +40,50 @@ body {
       background-repeat: no-repeat;
       background-size: cover;*/
     background-color: $color1;
+    color: $color3;
   }
+
 
 .logo {
   height: 2em;
   width: 2em;
   border-radius: 50%;
-  object-fit: cover;
+  background-image: url(../img/avatar.png);
+  background-size: 140%;
+  background-position: center;
+  background-position-y: -4px;
   box-shadow: $shadow;
   margin: 0em 1em 0em 1em;
+  &:hover {
+    height: 2.5em;
+    width: 2.5em;
+  }
 }
 
+.btn-outline-green {
+  color: $color6;
+  border-color: $color6;
+  background-color: none;
+  &:hover {
+    color: $color4;
+    background-color: $color6;
+  }
+}
+
+.container-section {
+  padding-bottom: 1em;
+  .card {
+    margin: auto;
+    padding: 1em;
+
+  }
+}
+
+.portfolio-card,.skill-card {
+  background-color: transparent;
+  border: transparent;
+  //color: $color3;
+}
 /*
   .main_head {
     display: flex;
@@ -78,25 +134,19 @@ body {
     color: $color3;
   }
 */
-  h1 {
-      color: $color3; 
+  h1, h2, h3 {
+      //color: $color3; 
       /*font-size: 90px;*/
-      text-align: center;
+      text-align: left;
       //background-color: rgba(45, 45, 45, 0.1);
+      font-family: 'Staatliches', cursive;
   }
   
-  hr {
-    width: 25%;
-    height: 5px;
-    text-align: left;
-    background-color: $color5;
-    border: none;
+  .title {
+    font-size: 90px;
+    text-shadow: 2px 2px 2px $color6;
   }
-  
-  h2 {
-    text-align: left;
-    color: $color3;
-  }
+
   hr {
     width: 2em;
       height: 0.5em;
@@ -151,22 +201,17 @@ body {
     height: auto;
   }
   
-  .work {
+  .work,.education {
     min-width: 40%;
     max-width: fit-content;
     height: 20em;
     overflow: scroll;
     flex: 1;
+    color: $color2;
   }
   
-  .education {
-    min-width: 50%;
-    max-width: fit-content;
-    height: 20em;
-    overflow: scroll;
-    flex: 1;
-  }
   
+  /*
   .subsection {
     display: flex;
     justify-content: space-around;
@@ -182,7 +227,7 @@ body {
       margin: 0.5em;
     }
   }
-  
+  */
   
   
  .info-text {
@@ -194,14 +239,24 @@ body {
   
 
   section {
-    background-color: $color2;
-      border-radius: 10px;
+    //background-color: $color2;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255,255,255, 0.075);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 0px rgba(255,255,255,0.4) solid;
+    border-bottom: 0px rgba(40,40,40,0.35) solid;
+    border-right: 0px rgba(40,40,40,0.35) solid;
+    border-radius: 10px;
+      //border-radius: 10px;
       width: 100%;
       height: 100%;
       padding: 1em;
       margin: 1em;
       //opacity: 80%;
-      box-shadow: $shadow;
+      //box-shadow: $shadow;
+      a {
+        margin-top: 1em;
+      }
     }
   
   .portfolio,.skills {
@@ -212,46 +267,28 @@ body {
     flex-wrap: wrap;
   }
 
-  .portfolio {
-    button {
-      width: fit-content;
-      margin-top: 0.5em;
-      a {
-        &:hover {
-          text-decoration: none;
-        }
-      }
-    }
+  .img-card {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  button {
-      background-color: $color4;
-      color: $color3;
-      overflow: hidden;
-      border-radius: 5px;
-      text-decoration: none;
-      padding: 10px 0px;
-      text-align: center;
-      border: none;
-      box-shadow: $shadow;
+  .neptune {
+    background-image: url(../img/svg/neptune.svg);
   }
-  
-  
-    button a{
-      font-family: "Montserrat";
-      color: $color3;
-      border: none;
-      text-decoration: none;
-      padding: 15px 32px;
-      font-size: 17px; 
-      text-align: center;
-    }
-  
-  button a:hover {
-    background-color: $color3;
-    color: $color4;
-    
+  .jupyter {
+    background-image: url(../img/svg/jupiter.svg);
   }
-
+  .saturne {
+    background-image: url(../img/svg/saturn.png);
+  }
   img.hublot {
       height: 6em;
       width: 6em;
@@ -400,11 +437,7 @@ body {
     border-radius: 5px;
     padding: 0.5em 1em 0.5em 1em;
   }
-  
-  .download {
-    margin-top: 1em;
-    width: auto;
-  }
+
 
  /* Skills */
   .techno {
@@ -457,3 +490,118 @@ body {
     color: $color5;
     font-size: 3em;
   }
+
+  .wave-bg {
+    background-image: url(../img/svg/wave_3.svg);
+    background-repeat: no-repeat;
+  }
+
+  .repeat-wave-bg {
+    background-image: url(../img/svg/repeat_wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .glass-square {
+    //background-color: rgb(255, 255, 255); /* Fallback color */
+    background-color: rgba(212, 212, 212, 0.4); /* Black w/opacity/see-through */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    height: 30em;
+    width: 15em;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 2;
+    box-shadow: inset 0px 0px 20px 5px #FFFFFF, 
+    28px 28px 50px 1em rgba($color: #0D2750, $alpha: 0.16), 
+    -23px -23px 45px 0.5em #FFFFFF;
+}
+
+.blob {
+  background-image: url(../img/svg/blob.svg);
+  height: 20em;
+  width: 20em;
+  position: fixed;
+}
+#blob1 {
+  top: -50px;
+  left: -50px;
+}
+#blob2 {
+  right: -50px;
+  transform: rotate(90deg);
+}
+  /* toggle switch */
+  /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.mode {
+  color: $color3;
+  i {
+    margin: 0.5em;
+  }
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.light-mode {
+  background-color: $color3;
+  color: $color1;
+}
