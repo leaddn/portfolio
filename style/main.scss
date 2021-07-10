@@ -192,15 +192,7 @@ body {
     justify-content: space-around;
     align-items: center;
   }
-  
-  .about {
-    background-color: $color2;
-  }
 
-  .about,.info {
-    height: auto;
-  }
-  
   .work,.education {
     min-width: 40%;
     max-width: fit-content;

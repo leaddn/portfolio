@@ -179,14 +179,6 @@ h4 {
   align-items: center;
 }
 
-.about {
-  background-color: #4F5256;
-}
-
-.about, .info {
-  height: auto;
-}
-
 .work, .education {
   min-width: 40%;
   max-width: fit-content;
