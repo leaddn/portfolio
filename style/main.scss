@@ -1,5 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Staatliches&display=swap');
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 //$color1: #2F3B4B; //dark blue
 $color1: #070339;
@@ -8,8 +14,33 @@ $color3: #f2f2f2; // white
 $lavender: #d4dcff;
 $color4: #333; // black
 $color5: #A0DAA9; //watergreen
-$color6: #06fdd8;
+$color6: #06fdd8; // Green
 $black: #1e1e1e;
+$color7: #7952b3; // Purple
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  height: fit-content;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  //font-family: 'Poppins';
+    /*background-image: url('./img/1560285.jpeg');
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+  background-color: $color1;
+  color: #FFFFFF;
+  a {
+    text-decoration: none;
+    color: $color3;
+  }
+}
 
 $shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
@@ -19,7 +50,7 @@ $shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  min-height: 500px;
+  //min-height: 500px;
 }
 
 .black-bg {
@@ -30,33 +61,59 @@ $shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   background-color: $color1;
 }
 
-body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
+.bg-grey {
+  background-color: rgba(0, 0, 0, 0.342);
+}
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     height: 100%;
-    width: 100%;
-      /*background-image: url('./img/1560285.jpeg');
-      background-color: #333;
-      background-repeat: no-repeat;
-      background-size: cover;*/
-    background-color: $color1;
-    color: $color3;
+    //width: fit-content;
+    overflow-y: scroll;
   }
 
+  .nav-glass {
+    //background: #f5f5f59f;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-link {
+  color: #070339;
+  &:focus {
+    color: $color6;
+  }
+  &:hover {
+    transition: 0.2s;
+    color: $color6 !important;
+    border-bottom: solid $color6;
+    background-color: rgba(0, 0, 0, 0.205);
+  }
+}
+.sticky-top {
+  background-color: #f5f5f59f;
+  //position: relative;
+}
 
 .logo {
-  height: 2em;
-  width: 2em;
+  height: 2.5em;
+  width: 2.5em;
   border-radius: 50%;
-  background-image: url(../img/avatar.png);
-  background-size: 140%;
-  background-position: center;
-  background-position-y: -4px;
+  //background-image: url(../img/avatar.png);
+  //background-size: 160%;
+  //background-position: center;
+  //background-position-y: -4px;
   box-shadow: $shadow;
   margin: 0em 1em 0em 1em;
   &:hover {
-    height: 2.5em;
-    width: 2.5em;
+    height: 3em;
+    width: 3em;
   }
 }
 
@@ -71,19 +128,78 @@ body {
 }
 
 .container-section {
-  padding-bottom: 1em;
+  width: 100%;
+  //padding-bottom: 1em;
   .card {
-    margin: auto;
+    //margin: auto;
     padding: 1em;
+    word-wrap: normal;
+    word-break: normal;
 
   }
 }
 
-.portfolio-card,.skill-card {
+
+
+  .header {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    top: -5em;
+  } 
+
+  @media all and (max-width: 800px) { 
+    .header {  
+      display: none;
+    }
+  }
+
+#arrow {
+  color: $color3;
+  &:hover {
+    color: $color6;
+  }
+}
+
+.carousel-caption {
+  //font-size: 3em;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  padding: 1em;
+  background-color: #ffffff49;
+}
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+  padding: 1em;
+  background-color: #ffffff88;
+}
+
+.portfolio-card,.skill-card, .services-card, .tool-card {
   background-color: transparent;
   border: transparent;
   //color: $color3;
 }
+.services-card {
+  width: auto;
+  padding: auto;
+  margin: auto;
+}
+.tool-card {
+  width: auto;
+  padding: auto;
+  //margin: auto;
+  min-width: 30%;
+  max-width: 100%;
+  .card-body {
+    width: 100%;
+    padding: 0;
+  }
+}
+
 /*
   .main_head {
     display: flex;
@@ -95,6 +211,12 @@ body {
   } 
  */ 
   footer {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.171);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 0px rgba(255,255,255,0.4) solid;
+    border-bottom: 0px rgba(40,40,40,0.35) solid;
+    border-right: 0px rgba(40,40,40,0.35) solid;
     text-align: center;
     color: $color3;
   }
@@ -134,31 +256,43 @@ body {
     color: $color3;
   }
 */
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  //font-family: 'Staatliches', cursive;
+}
   h1, h2, h3 {
       //color: $color3; 
       /*font-size: 90px;*/
       text-align: left;
       //background-color: rgba(45, 45, 45, 0.1);
-      font-family: 'Staatliches', cursive;
+
   }
   
+  .title-container {
+    margin-top: 2em;
+  }
+
   .title {
     font-size: 90px;
     text-shadow: 2px 2px 2px $color6;
   }
 
   hr {
+    border-bottom: solid 0.5em $color6;
     width: 2em;
+    opacity: 1;
+/*     width: 2em;
       height: 0.5em;
       text-align: left;
       background-color: $color5;
       border: none;
-      margin: 0px;
+      margin: 0px; */
   }
 
-  h3 {
-    font-size: 1.5em;
-  }
+   h3 {
+    font-size: 1.25rem;
+  } 
   h4 {
     font-size: 1.25em;
   }
@@ -173,7 +307,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 300px;
+    width: auto;
     height: auto;
     margin-top: 1em;
     align-items: center;
@@ -185,13 +319,13 @@ body {
     height: auto;
   }
   
-  .info {
+/*   .info {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-  }
+  } */
 
   .work,.education {
     min-width: 40%;
@@ -221,14 +355,6 @@ body {
   }
   */
   
-  
- .info-text {
-    text-align: left;
-    i {
-      margin-right: 0.5em;
-    }
-    }
-  
 
   section {
     //background-color: $color2;
@@ -243,7 +369,7 @@ body {
       width: 100%;
       height: 100%;
       padding: 1em;
-      margin: 1em;
+      //margin: 1em;
       //opacity: 80%;
       //box-shadow: $shadow;
       a {
@@ -251,27 +377,55 @@ body {
       }
     }
   
-  .portfolio,.skills {
-    margin: 1em;
+  .portfolio,.skills, .about {
+    //margin: 1em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 100%;
   }
 
-  .img-card {
-    width: 10em;
-    height: 10em;
-    border-radius: 50%;
-    background-size: 70%;
+
+  .portfolio-card {
+    max-width: 15em;
+  }
+
+  .img-card-hover {
+    //background-size:contain;
+    width: 100%;
+    height: 8em;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    top: -50px;
+    background-position: center bottom;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    a {
+        visibility: hidden;
+    }
+    &:hover, &:active, &:focus {
+      transition: 0.2s;
+        background: #06fdd854;
+        //background-image: none;
+        backdrop-filter: blur(5px);
+        a {
+            visibility: visible;
+        }
+    }
+}
+.img-afpa {
+  background-image: url(../img/projects/afpa.jpeg);
+}
+.img-myuka {
+  background-image: url(../img/projects/myuka.png);
+}
+.img-kitchen {
+  background-image: url(../img/projects/kitchen.png);
+}
+.img-skribix {
+  background-image: url(../img/projects/skribix.png);
+}
   .neptune {
     background-image: url(../img/svg/neptune.svg);
   }
@@ -377,7 +531,7 @@ body {
   }
   
   /* The actual content */
-  .content {
+  .time-content {
     padding: 1em 2em;
     background-color: $color3;
     position: relative;
@@ -433,18 +587,21 @@ body {
 
  /* Skills */
   .techno {
+    width: fit-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     div {
-      border-radius: 5px;
+      //border-radius: 5px;
       text-align: center;
       color: $color3;
       padding: 0.25em;
+      margin: 0.25em;
       font-size: 0.75em;
+      background-color: $color7;
     }
 
-    .techno_html {
+/*     .techno_html {
       background-color: orangered;
     }
     .techno_css {
@@ -455,11 +612,11 @@ body {
     }
     .techno_boot {
       background-color: #7952b3;
-    }
+    } */
   }
 
   /* Carousel */
-  .carousel-inner img {
+/*   .carousel-inner img {
     width: 100%;
     height: 100%;
   }
@@ -474,12 +631,12 @@ body {
 
       }
     }
-  }
+  } */
   .hello {
     font-size: 1.5em;
   }
   .lea {
-    color: $color5;
+    color: $color6;
     font-size: 3em;
   }
 
@@ -596,4 +753,72 @@ input:checked + .slider:before {
 .light-mode {
   background-color: $color3;
   color: $color1;
+}
+
+/* flip-card */
+.info {
+  max-width: 100%;
+  min-width: 100%;
+}
+.flip-card {
+  padding: 0;
+  background-color: transparent;
+  width: 18em;
+  //width: 18em;
+  //min-width: 70%;
+  height: 25em;
+  //border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  //width: 15em;
+  //padding: 1em;
+  position: relative;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #7952b3;
+}
+
+/* Style the back side */
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+  padding: 1em;
+  a {
+    text-decoration: none;
+    //color: $color6;
+    &:hover,&:active,&:focus {
+      color: black;
+    }
+  }
+}
+
+/* Progress */
+.progress {
+  height: 10px;
+  width: 50%;
 }
