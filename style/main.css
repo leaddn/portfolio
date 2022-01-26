@@ -21,7 +21,7 @@ body {
     background-color: #333;
     background-repeat: no-repeat;
     background-size: cover;*/
-  background-color: #070339;
+  background-color: #141010;
   color: #FFFFFF;
 }
 
@@ -31,7 +31,7 @@ body a {
 }
 
 .sticky-bg {
-  background-image: url(../img/svg/repeat_wave.svg);
+  background-image: url(../img/svg/black_wave.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -43,7 +43,7 @@ body a {
 }
 
 .blue-bg {
-  background-color: #070339;
+  background-color: #141010;
 }
 
 .bg-grey {
@@ -65,10 +65,22 @@ body a {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 0;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-collapse, .nav-container {
+  height: 100%;
+  align-items: center;
 }
 
 .nav-link {
-  color: #070339;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #070339 !important;
 }
 
 .nav-link:focus {
@@ -89,14 +101,16 @@ body a {
 .logo {
   height: 2.5em;
   width: 2.5em;
-  border-radius: 50%;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   margin: 0em 1em 0em 1em;
 }
 
 .logo:hover {
   height: 3em;
   width: 3em;
+}
+
+.navbar-brand {
+  margin: 0;
 }
 
 .btn-outline-green {
@@ -136,6 +150,7 @@ body a {
 
 #arrow {
   color: #f2f2f2;
+  text-shadow: -2px -2px 2px #070339;
 }
 
 #arrow:hover {
@@ -253,7 +268,7 @@ h1, h2, h3 {
 
 .title {
   font-size: 90px;
-  text-shadow: 2px 2px 2px #06fdd8;
+  text-shadow: 2px 2px 2px #06fdd8, -2px -2px 2px #141010;
 }
 
 hr {
@@ -414,6 +429,7 @@ section a {
 }
 
 img.hublot {
+  background-color: #d4dcff;
   height: 6em;
   width: 6em;
   border-radius: 50%;
@@ -725,7 +741,7 @@ input:checked + .slider:before {
 
 .light-mode {
   background-color: #f2f2f2;
-  color: #070339;
+  color: #141010;
 }
 
 /* flip-card */
@@ -735,9 +751,10 @@ input:checked + .slider:before {
 }
 
 .flip-card {
+  align-items: center;
   padding: 0;
   background-color: transparent;
-  width: 18em;
+  width: 100%;
   height: 25em;
   perspective: 1000px;
   /* Remove this if you don't want the 3D effect */
@@ -745,6 +762,7 @@ input:checked + .slider:before {
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
+  width: 18em;
   position: relative;
   height: 100%;
   text-align: center;
