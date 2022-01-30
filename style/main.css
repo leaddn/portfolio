@@ -124,12 +124,11 @@ body a {
   background-color: #06fdd8;
 }
 
-.container-section {
+section {
   width: 100%;
 }
 
-.container-section .card {
-  padding: 1em;
+section .card {
   word-wrap: normal;
   word-break: normal;
 }
@@ -346,7 +345,7 @@ h4 {
     }
   }
   */
-section {
+.container-section {
   backdrop-filter: blur(5px);
   background-color: rgba(255, 255, 255, 0.075);
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
@@ -359,7 +358,7 @@ section {
   padding: 1em;
 }
 
-section a {
+.container-section a {
   margin-top: 1em;
 }
 
@@ -375,57 +374,43 @@ section a {
   max-width: 15em;
 }
 
+/* Hoverable card with button */
 .img-card-hover {
-  width: 100%;
-  height: 8em;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center bottom;
+  /*width: 100%;
+    height: 8em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.img-card-hover a {
+.img-card-hover .card-img-overlay {
   visibility: hidden;
 }
 
 .img-card-hover:hover, .img-card-hover:active, .img-card-hover:focus {
   transition: 0.2s;
-  background: #06fdd854;
   backdrop-filter: blur(5px);
 }
 
-.img-card-hover:hover a, .img-card-hover:active a, .img-card-hover:focus a {
+.img-card-hover:hover .card-img-overlay, .img-card-hover:active .card-img-overlay, .img-card-hover:focus .card-img-overlay {
+  padding: 0;
   visibility: visible;
+  background-color: #06fdd854;
 }
 
-.img-afpa {
-  background-image: url(../img/projects/afpa.jpeg);
+.img-card-hover:hover .card-img-overlay .overlay-text, .img-card-hover:active .card-img-overlay .overlay-text, .img-card-hover:focus .card-img-overlay .overlay-text {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(20, 20, 20, 0.7);
 }
 
-.img-myuka {
-  background-image: url(../img/projects/myuka.png);
-}
-
-.img-kitchen {
-  background-image: url(../img/projects/kitchen.png);
-}
-
-.img-skribix {
-  background-image: url(../img/projects/skribix.png);
-}
-
-.neptune {
-  background-image: url(../img/svg/neptune.svg);
-}
-
-.jupyter {
-  background-image: url(../img/svg/jupiter.svg);
-}
-
-.saturne {
-  background-image: url(../img/svg/saturn.png);
+.img-card-hover:hover .card-img-overlay .portfolio-hover-content, .img-card-hover:active .card-img-overlay .portfolio-hover-content, .img-card-hover:focus .card-img-overlay .portfolio-hover-content {
+  align-items: center;
 }
 
 img.hublot {

@@ -5,16 +5,13 @@
     <!--Required meta tags-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Léa's Portfolio</title>
+    <title>Lea Dieudonat</title>
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/main.css">
     <!--Font awesome icons-->
     <script src="https://kit.fontawesome.com/eaf337826d.js" crossorigin="anonymous"></script>
-    <!-- Jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Script -->
-    <script src="main.js"></script>
+
 
     <link rel="apple-touch-icon" sizes="180x180" href="./img/logo/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/logo/favicon/favicon-32x32.png">
@@ -124,53 +121,92 @@
     
     
         <!-- Portfolio -->
-        <div class="container container-section pt-4">
+        <section class="container container-section pt-4 mt-4 mb-4">
                     <h2 class="mt-4">Portfolio</h2>
                     <hr class="mb-5"/>
-                <section class="portfolio" id="portfolio">
-                            <div class="card portfolio-card">
-                                <!--<img src="./img/projects/kitchen.png" alt="" class="img-card">-->
-                                <div class="card-img-top img-card-hover img-skribix"><a href="#" class="btn btn-outline-green" data-bs-toggle="modal" data-bs-target="#PortfolioModal4">Go</a></div>
-                                <div class="card-body bg-grey">
-                                    <h3 class="card-title">Skribix Extraction Tool</h3>
-                                </div>
+            <div class="row portfolio" id="portfolio">
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="card bg-dark text-white img-card-hover">
+                        <img class="card-img" src="../img/projects/annonces.png" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column" data-bs-toggle="modal" data-bs-target="#PortfolioModal6">
+                            <div class="portfolio-hover-content d-flex flex-grow-1 justify-content-center"><i class="fas fa-plus fa-3x"></i></div>
+                            <div class="overlay-text">
+                                <h5 class="card-title">The Right Corner</h5>
                             </div>
 
-                            <div class="card portfolio-card">
-                                <!--<a class="btn btn-outline-green" data-bs-toggle="modal" data-bs-target="#PortfolioModal1"><img src="./img/projects/afpa.jpeg" alt="" class="card-img-top card-img-hover">See</a>-->
-                                <div class="card-img-top img-card-hover img-afpa"><a href="#" class="btn btn-outline-green" data-bs-toggle="modal" data-bs-target="#PortfolioModal1">Go</a></div>
-                                <div class="card-body bg-grey">
-                                    <h3 class="card-title">Afpa website</h3>
-                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="card bg-dark text-white img-card-hover">
+                        <img class="card-img" src="../img/projects/skribix.png" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column" data-bs-toggle="modal" data-bs-target="#PortfolioModal4">
+                            <div class="portfolio-hover-content d-flex flex-grow-1 justify-content-center"><i class="fas fa-plus fa-3x"></i></div>
+                            <div class="overlay-text">
+                                <h5 class="card-title">Skribix Extraction Tool</h5>
                             </div>
 
-                            <div class="card portfolio-card">
-                                <!--<img src="./img/projects/myuka.png" alt="" class="img-card">-->
-                                <div class="card-img-top img-card-hover img-myuka"><a href="#" class="btn btn-outline-green" data-bs-toggle="modal" data-bs-target="#PortfolioModal2">Go</a></div>
-                                <div class="card-body bg-grey">
-                                    <h3 class="card-title">Myuka project</h3>
-                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="card bg-dark text-white img-card-hover">
+                        <img class="card-img" src="../img/projects/afpa1.png" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column" data-bs-toggle="modal" data-bs-target="#PortfolioModal1">
+                            <div class="portfolio-hover-content d-flex flex-grow-1 justify-content-center"><i class="fas fa-plus fa-3x"></i></div>
+                            <div class="overlay-text">
+                                <h5 class="card-title">Afpa Website</h5>
                             </div>
 
-                            <div class="card portfolio-card">
-                                <!--<img src="./img/projects/kitchen.png" alt="" class="img-card">-->
-                                <div class="card-img-top img-card-hover img-kitchen"><a href="#" class="btn btn-outline-green" data-bs-toggle="modal" data-bs-target="#PortfolioModal3">Go</a></div>
-                                <div class="card-body bg-grey">
-                                    <h3 class="card-title">Tikawa Coffee</h3>
-                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="card bg-dark text-white img-card-hover">
+                        <img class="card-img" src="../img/projects/myuka.png" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column" data-bs-toggle="modal" data-bs-target="#PortfolioModal2">
+                            <div class="portfolio-hover-content d-flex flex-grow-1 justify-content-center"><i class="fas fa-plus fa-3x"></i></div>
+                            <div class="overlay-text">
+                                <h5 class="card-title">Myuka Project</h5>
                             </div>
-                        
-                    <!--</div>-->
-                    
-                </section>
-        </div>
 
-            <!-- Services -->
-        <div class="container container-section pt-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="card bg-dark text-white img-card-hover">
+                        <img class="card-img" src="../img/projects/kitchen.png" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column" data-bs-toggle="modal" data-bs-target="#PortfolioModal3">
+                            <div class="portfolio-hover-content d-flex flex-grow-1 justify-content-center"><i class="fas fa-plus fa-3x"></i></div>
+                            <div class="overlay-text">
+                                <h5 class="card-title">Tikawa Coffee</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="card bg-dark text-white img-card-hover">
+                        <img class="card-img" src="../img/projects/nancy.png" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column" data-bs-toggle="modal" data-bs-target="#PortfolioModal5">
+                            <div class="portfolio-hover-content d-flex flex-grow-1 justify-content-center"><i class="fas fa-plus fa-3x"></i></div>
+                            <div class="overlay-text">
+                                <h5 class="card-title">Nancy Tourism</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="container container-section pt-4 mt-4 mb-4">
                 <h2 class="mt-4" id="service">Services</h2>
                 <hr class="mb-5"/>
 
-            <section class="services">
+            <div class="services">
                 <!--<div class="subsection">-->
                     <div class="col card services-card">
                         <h3 class="card-title">
@@ -222,16 +258,16 @@
                         </div>
                     </div>  
                     
-            </section>
+            </div>
         
-        </div>
+        </section>
         
-    <!-- Skills -->
-        <div class="container container-section pt-4">
+        <!-- Skills -->
+        <section class="container container-section pt-4 mt-4 mb-4">
                     <h2 class="mt-4" id="skills">Skills</h2>
                     <hr class="mb-5"/>
 
-                <section class="skills d-flex flex-column justify-content-space">
+                <div class="skills d-flex flex-column justify-content-space">
                         <h5><i class="fab fa-python"></i> Python</h5>
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
@@ -260,73 +296,71 @@
                         
                         
                     <!--</div>-->
-                </section>
+                </div>
             
-        </div>
-    <!-- Skills -->
+        </section>
+        <!-- Skills -->
 
         <!-- Tools -->
-        <div class="container container-section pt-4">
+        <section class="container container-section pt-4 mt-4 mb-4">
             <h2 class="mt-4" id="tools">Tools</h2>
             <hr class="mb-5"/>
 
-        <section class="d-flex justify-content-between flex-wrap align-content-stretch" style="margin: 0; padding: 0;">
-                <div class="card tool-card">
-                    <div class="card-body">
-                        <h3 class="card-title">                            <span class="fa-stack fa-xs">
-                            <i class="far fa-circle fa-stack-2x" style="color: #06fdd8;"></i>
-                            <i class="fas fa-pencil-alt fa-stack-1x fa-inverse" style="color: #06fdd8;"></i>
-                            </span>
-                            Design</h3>
-                        <ul>
-                            <li>Figma</li>
-                            <li>Canvas</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card tool-card">
-                    <div class="card-body">
-                        <h3 class="card-title">
-                            <span class="fa-stack fa-xs">
+            <div class="d-flex justify-content-between flex-wrap align-content-stretch" style="margin: 0; padding: 0;">
+                    <div class="card tool-card">
+                        <div class="card-body">
+                            <h3 class="card-title">                            <span class="fa-stack fa-xs">
                                 <i class="far fa-circle fa-stack-2x" style="color: #06fdd8;"></i>
-                                <i class="fas fa-code fa-stack-1x fa-inverse" style="color: #06fdd8;"></i>
-                            </span>
-                            Development</h3>
-                        <ul>
-                            <li>VS Code</li>
-                            <li>Shell bash</li>
-                            <li>Git</li>
-                            <li>Docker</li>
-                        </ul>
+                                <i class="fas fa-pencil-alt fa-stack-1x fa-inverse" style="color: #06fdd8;"></i>
+                                </span>
+                                Design</h3>
+                            <ul>
+                                <li>Figma</li>
+                                <li>Canvas</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="card tool-card">
-                    <div class="card-body">
-                        <h3 class="card-title">
-                            <span class="fa-stack fa-xs">
-                                <i class="far fa-circle fa-stack-2x" style="color: #06fdd8;"></i>
-                                <i class="fas fa-tasks fa-stack-1x fa-inverse" style="color: #06fdd8;"></i>
-                            </span>
-                            Management</h3>
-                        <ul>
-                            <li>Slack</li>
-                            <li>Trello</li>
-                            <li>Notion</li>
-                            <li>Discord</li>
-                        </ul>
+                    <div class="card tool-card">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                <span class="fa-stack fa-xs">
+                                    <i class="far fa-circle fa-stack-2x" style="color: #06fdd8;"></i>
+                                    <i class="fas fa-code fa-stack-1x fa-inverse" style="color: #06fdd8;"></i>
+                                </span>
+                                Development</h3>
+                            <ul>
+                                <li>VS Code</li>
+                                <li>Shell bash</li>
+                                <li>Git</li>
+                                <li>Docker</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>   
+                    <div class="card tool-card">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                <span class="fa-stack fa-xs">
+                                    <i class="far fa-circle fa-stack-2x" style="color: #06fdd8;"></i>
+                                    <i class="fas fa-tasks fa-stack-1x fa-inverse" style="color: #06fdd8;"></i>
+                                </span>
+                                Management</h3>
+                            <ul>
+                                <li>Slack</li>
+                                <li>Trello</li>
+                                <li>Notion</li>
+                                <li>Discord</li>
+                            </ul>
+                        </div>
+                    </div>   
+            </div>
         </section>
-    
-</div>
-<!-- Tools -->
+        <!-- Tools -->
 
-    <!-- About -->
-  
-        <div class="container container-section pt-4">
+        <!-- About -->
+        <section class="container container-section pt-4 mt-4 mb-4">
             <h2 class="mt4" id="about">About</h2>
             <hr class="mb-5"/>
-            <section class="container container-section about txt-center">
+            <div class="container container-section about txt-center">
                 <div class="card flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
@@ -338,7 +372,7 @@
                                     <p><i class="fas fa-map-marker-alt"></i> Paris, France</p>
                                     <p><i class="fas fa-envelope"></i> <a href="mailto: leadieudonat@gmail.com" target="_blank"> leadieudonat@gmail.com</a></p>
                                     <p><i class="fas fa-phone"></i> +33 6 61 63 98 82</p>
-                                    <p><img src="./img/icone/france.png" alt="france" class="icone"><img src="./img/icone/uk.png" alt="uk" class="icone">
+                                    <p><img src="./img/logo/france.png" alt="france" class="icone"><img src="./img/logo/uk.png" alt="uk" class="icone">
                                     </p>
                             </div>
                         </div>
@@ -361,172 +395,168 @@
                             </div>
                         </div>
                     </div>
-    
-                    
                 </div> 
     
                 <div class="card skill-card info">
                     <h2 class="card-title"><i class="fas fa-info-circle"></i> Info</h2>
-            
                     <p class="card-body">
                         I love to code and decode, develop my skills in self-learning and combine my creative side with problem solving skills to attend your needs.
                         <br>
                         After getting a master's degree in <abbr title="Natural Language Processing">NLP</abbr> and manipulating data and Python, I decided to extend my knowledge on web development through a 9 months training session in <a href="https://www.afpa.fr/">AFPA</a>.
                         <br> 
                         I'm well organized, focusing on details, motivated, and result oriented.
-                        I'll bring a unique perspective to my coding projects for a better understanding your expectations.
+                        I'll bring a unique perspective to my coding projects for a better understanding of your expectations.
                     </p>
-                    
                 </div>
 
-            </section>
+            </div>
 
-    </div>
+        </section>
 
-    <!-- / About -->
-    <!-- Experiences + Education -->
-<!--         <div class="container container-section pt-4">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <h2 id="work" class="mt-4">Work</h2>
-                    <hr class="mb-5"/>
-                    <section class="work">
-                        
-                        <div class="timeline">
-                            <div class="timecontainer right">
-                                <div class="time-content">
-                                    <h3>2021</h3>
-                                    <strong>Recreational Leader</strong>
-                                    <p>
-                                    Paris
-                                    <br>
-                                    Supervision of children in leisure centers and leisure stays
-                                    <ul>
-                                        <li>2021 : Mairie de Fosses</li>
-                                        <li>2017 : Mairie de Marly</li>
-                                        <li>2016 : Mairie de Goussainville</li>
-                                        <li>2015 : Mairie de Goussainville</li>
-                                    </ul>
-                                        </p>
-                                </div>
-                                </div>
-                            <div class="timecontainer right">
-                            <div class="time-content">
-                                <h3>2020</h3>
-                                <strong>R&D Data Management Office (DMO) - Intern</strong>
-                                <p>
-                                PRICEWATERHOUSECOOPERS / Luxembourg
-                                <br>
-                                Ontology creation for financial data :
+        <!-- / About -->
+            <!-- Experiences + Education -->
+            <!-- <div class="container container-section pt-4">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <h2 id="work" class="mt-4">Work</h2>
+                            <hr class="mb-5"/>
+                            <section class="work">
                                 
-                                <ul>
-                                    <li>Data extraction</li>
-                                    <li>Text comparison</li>
-                                    <li>Clustering</li>
-                                </ul>
-                                
-                                </p>
-                            </div>
-                            </div>
-                            <div class="timecontainer right">
-                            <div class="time-content">
-                                <h3>2018</h3>
-                                <strong>Mediation & communication - Intern</strong>
-                                <p>
-                                Espace Germinal / Paris
-                                <ul>
-                                    <li>Organization and management of cultural events</li>
-                                    <li>Dissemination of media and contact with partners</li>
-                                </ul>
-                                    </p>
-                            </div>
-                            </div>
-                            <div class="timecontainer right">
-                                <div class="time-content">
-                                    <h3>2018</h3>
-                                    <strong>Recreational Leader</strong>
-                                    <p>EEDF / Grandcamp-Maisy
+                                <div class="timeline">
+                                    <div class="timecontainer right">
+                                        <div class="time-content">
+                                            <h3>2021</h3>
+                                            <strong>Recreational Leader</strong>
+                                            <p>
+                                            Paris
+                                            <br>
+                                            Supervision of children in leisure centers and leisure stays
+                                            <ul>
+                                                <li>2021 : Mairie de Fosses</li>
+                                                <li>2017 : Mairie de Marly</li>
+                                                <li>2016 : Mairie de Goussainville</li>
+                                                <li>2015 : Mairie de Goussainville</li>
+                                            </ul>
+                                                </p>
+                                        </div>
+                                        </div>
+                                    <div class="timecontainer right">
+                                    <div class="time-content">
+                                        <h3>2020</h3>
+                                        <strong>R&D Data Management Office (DMO) - Intern</strong>
+                                        <p>
+                                        PRICEWATERHOUSECOOPERS / Luxembourg
                                         <br>
-                                        Adapted stays for adults with disabilities
-                                        </p>
-                                </div>
-                                </div>
-                                
-                        </div>
-                    </section>
-                </div>
-            
-                <div class="col-12 col-lg-6">
-                    <h2 id="education" class="mt-4">Education</h2>
-                    <hr class="mb-5"/>
-                    <section class="education">
-                        
-                        <div class="timeline">
-                            <div class="timecontainer right">
-                                <div class="card time-content">
-                                    <h3 class="card-title">2021/2022</h3>
-                                    <div class="card-body">
-                                        <strong>Web development Certification - RNCP III</strong>
-                                        <p>
-                                        AFPA - Paris, France (remotely)
+                                        Ontology creation for financial data :
+                                        
                                         <ul>
-                                            <li>Back-end</li>
-                                            <li>Front-end</li>
-                                            <li>Responsive</li>
+                                            <li>Data extraction</li>
+                                            <li>Text comparison</li>
+                                            <li>Clustering</li>
                                         </ul>
-                                        #HTML #CSS #JAVASCRIPT #PHP #SQL #WORDPRESS #SYMFONY
-                                        </p>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <div class="timecontainer right">
-                                <div class="card time-content">
-                                    <h3 class="card-title">2018/2020</h3>
-                                    <div class="card-body">
-                                        <strong>MSc degree in Natural Language Processing (NLP)</strong>
-                                        <p>
-                                        IDMC - Nancy, France
-                                        <ul>
-                                            <li>Machine Learning</li>
-                                            <li>Algorithms</li>
-                                            <li>Data Science</li>
-                                            <li>Neural Networks</li>
-                                        </ul>
-                                        #PYTHON #GIT
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timecontainer right">
-                                <div class="card time-content">
-                                    <h3 class="card-title">2016/2018</h3>
-                                    <div class="card-body">
-                                        <strong>Bachelor's degree in Linguistics</strong>
-                                        <p>
-                                        Descartes University - Paris
                                         
                                         </p>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="timecontainer right">
-                                <div class="card time-content">
-                                    <h3 class="card-title">2014</h3>
-                                    <div class="card-body">
-                                        <strong>Literary high-school diploma</strong>
-                                        <p>
-                                        Gérard de Nerval high-school - Luzarches
-                                        </p>
                                     </div>
-    
+                                    <div class="timecontainer right">
+                                    <div class="time-content">
+                                        <h3>2018</h3>
+                                        <strong>Mediation & communication - Intern</strong>
+                                        <p>
+                                        Espace Germinal / Paris
+                                        <ul>
+                                            <li>Organization and management of cultural events</li>
+                                            <li>Dissemination of media and contact with partners</li>
+                                        </ul>
+                                            </p>
+                                    </div>
+                                    </div>
+                                    <div class="timecontainer right">
+                                        <div class="time-content">
+                                            <h3>2018</h3>
+                                            <strong>Recreational Leader</strong>
+                                            <p>EEDF / Grandcamp-Maisy
+                                                <br>
+                                                Adapted stays for adults with disabilities
+                                                </p>
+                                        </div>
+                                        </div>
+                                        
                                 </div>
-                            </div>
-                        </div>  
-                    </section>
-                </div>
-            </div>
-        </div> -->
+                            </section>
+                        </div>
+                    
+                        <div class="col-12 col-lg-6">
+                            <h2 id="education" class="mt-4">Education</h2>
+                            <hr class="mb-5"/>
+                            <section class="education">
+                                
+                                <div class="timeline">
+                                    <div class="timecontainer right">
+                                        <div class="card time-content">
+                                            <h3 class="card-title">2021/2022</h3>
+                                            <div class="card-body">
+                                                <strong>Web development Certification - RNCP III</strong>
+                                                <p>
+                                                AFPA - Paris, France (remotely)
+                                                <ul>
+                                                    <li>Back-end</li>
+                                                    <li>Front-end</li>
+                                                    <li>Responsive</li>
+                                                </ul>
+                                                #HTML #CSS #JAVASCRIPT #PHP #SQL #WORDPRESS #SYMFONY
+                                                </p>
+                                            </div>
+            
+                                        </div>
+                                    </div>
+                                    <div class="timecontainer right">
+                                        <div class="card time-content">
+                                            <h3 class="card-title">2018/2020</h3>
+                                            <div class="card-body">
+                                                <strong>MSc degree in Natural Language Processing (NLP)</strong>
+                                                <p>
+                                                IDMC - Nancy, France
+                                                <ul>
+                                                    <li>Machine Learning</li>
+                                                    <li>Algorithms</li>
+                                                    <li>Data Science</li>
+                                                    <li>Neural Networks</li>
+                                                </ul>
+                                                #PYTHON #GIT
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timecontainer right">
+                                        <div class="card time-content">
+                                            <h3 class="card-title">2016/2018</h3>
+                                            <div class="card-body">
+                                                <strong>Bachelor's degree in Linguistics</strong>
+                                                <p>
+                                                Descartes University - Paris
+                                                
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timecontainer right">
+                                        <div class="card time-content">
+                                            <h3 class="card-title">2014</h3>
+                                            <div class="card-body">
+                                                <strong>Literary high-school diploma</strong>
+                                                <p>
+                                                Gérard de Nerval high-school - Luzarches
+                                                </p>
+                                            </div>
+            
+                                        </div>
+                                    </div>
+                                </div>  
+                            </section>
+                        </div>
+                    </div>
+                </div> -->
     </div>
     
     <!-- Modals -->
@@ -540,11 +570,11 @@
             </div>
             <div class="modal-body">
                 <p>Responsive digital platform to collect data from future AFPA interns.</p>
-                <div class="techno"><div class="techno_html"><i class="fa fa-html5" aria-hidden="true"></i></div><div class="techno_css"><i class="fa fa-css3" aria-hidden="true"></i></div><div class="techno_sass">Sass</div></div>
+                <div class="techno"><div class="techno_html"><i class="fa fa-html5" aria-hidden="true"></i></div><div class="techno_css"><i class="fa fa-css3" aria-hidden="true"></i></div><div class="techno_sass">Sass</div><div>PHP</div></div>
             </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <!--<a type="button" class="btn btn-primary" href="https://leaddn.github.io/afpa/">Visit</a>-->
+            <a type="button" class="btn btn-primary" href="https://github.com/leaddn/afpa-v2">Visit</a>
             </div>
         </div>
         </div>
@@ -559,7 +589,7 @@
             </div>
             <div class="modal-body">
                 <p>Scan of food products to identify their composition and impact on health.</p>
-                <div class="techno"><div class="techno_html"><i class="fa fa-html5" aria-hidden="true"></i></div><div class="techno_css"><i class="fa fa-css3" aria-hidden="true"></i></div><div class="techno_sass">Sass</div></div>
+                <div class="techno"><div class="techno_html"><i class="fa fa-html5" aria-hidden="true"></i></div><div class="techno_css"><i class="fa fa-css3" aria-hidden="true"></i></div><div class="techno_sass">Sass</div><div>JQuery</div><div>Json API</div></div>
                 <!--<a class="btn btn-outline-green" href="https://leaddn.github.io/myuka/start.html">See</a>-->
             </div>
             <div class="modal-footer">
@@ -612,6 +642,44 @@
             <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             <!--<a type="button" class="btn btn-primary" href="https://leaddn.github.io/afpa/">Visit</a>-->
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="modal fade" id="PortfolioModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-dark">
+            <div class="modal-header">
+            <h5 class="modal-title">Nancy Tourism</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            </button>
+            </div>
+            <div class="modal-body">
+                <p>Unofficial website template for the city of Nancy.</p>
+                <div class="techno"><div><i class="fa fa-html5" aria-hidden="true"></i></div><div><i class="fa fa-css3" aria-hidden="true"></i></div><div>Sass</div></div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a type="button" class="btn btn-primary" href="https://leaddn.github.io/nancy/">Visit</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="modal fade" id="PortfolioModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-dark">
+            <div class="modal-header">
+            <h5 class="modal-title">The Right Corner</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            </button>
+            </div>
+            <div class="modal-body">
+                <p>Symfony website for offers between individuals.</p>
+                <div class="techno"><div>Symfony</div><div>PHP</div><div>MySQL</div></div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a type="button" class="btn btn-primary" href="https://github.com/leaddn/annonces">Visit</a>
             </div>
         </div>
         </div>
@@ -691,5 +759,9 @@
     <!-- Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Script -->
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
