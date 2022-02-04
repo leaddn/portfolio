@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+.green {
+  color: #06fdd8;
+}
+
 html, body {
   font-family: 'Open Sans', sans-serif;
   height: fit-content;
@@ -181,13 +185,29 @@ section .card {
   width: auto;
   padding: auto;
   margin: auto;
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+.services-card:hover {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.171);
+  box-shadow: inset rgba(0, 0, 0, 0.425) 2px 8px 8px;
 }
 
 .tool-card {
+  padding-top: 1em;
   width: auto;
   padding: auto;
   min-width: 30%;
   max-width: 100%;
+  border-radius: 10px;
+}
+
+.tool-card:hover {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.171);
+  box-shadow: inset rgba(0, 0, 0, 0.425) 2px 8px 8px;
 }
 
 .tool-card .card-body {
@@ -579,18 +599,6 @@ img.hublot {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /*     .techno_html {
-      background-color: orangered;
-    }
-    .techno_css {
-      background-color: #1e90ff;
-    }
-    .techno_sass {
-      background-color: #cf649a;
-    }
-    .techno_boot {
-      background-color: #7952b3;
-    } */
 }
 
 .techno div {
@@ -602,23 +610,6 @@ img.hublot {
   background-color: #7952b3;
 }
 
-/* Carousel */
-/*   .carousel-inner img {
-    width: 100%;
-    height: 100%;
-  }
-  .carousel {
-    .carousel-item {
-      height: 500px;
-      img {
-        position: absolute;
-        object-fit: cover;
-        top: 0;
-        left: 0;
-
-      }
-    }
-  } */
 .hello {
   font-size: 1.5em;
 }
@@ -749,6 +740,7 @@ input:checked + .slider:before {
 }
 
 .flip-card {
+  border: none;
   align-items: center;
   padding: 0;
   background-color: transparent;
