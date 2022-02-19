@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .green {
@@ -63,16 +64,32 @@ body a {
   overflow-y: scroll;
 }
 
-.nav-glass {
-  border-radius: 0 0 16px 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-top: 0;
+/* 
+  .nav-glass {
+    //background: #f5f5f59f;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 0;
+} */
+#primary-nav {
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+}
+
+.shrink {
+  background-color: #d4dcff;
+}
+
+.shrink .nav-link {
+  color: #070339 !important;
 }
 
 .navbar {
+  backdrop-filter: blur(5px);
   padding: 0;
 }
 
@@ -82,9 +99,9 @@ body a {
 }
 
 .nav-link {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  color: #070339 !important;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: #f2f2f2 !important;
 }
 
 .nav-link:focus {
@@ -96,10 +113,6 @@ body a {
   color: #06fdd8 !important;
   border-bottom: solid #06fdd8;
   background-color: rgba(0, 0, 0, 0.205);
-}
-
-.sticky-top {
-  background-color: #f5f5f59f;
 }
 
 .logo {
@@ -141,13 +154,27 @@ section .card {
   width: 100%;
   height: 100%;
   margin: 0;
-  position: relative;
-  top: -5em;
+  padding: 1em;
+  backdrop-filter: blur(5px);
+}
+
+.skills-icon i {
+  font-size: 2.5rem;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
 
 @media all and (max-width: 800px) {
-  .header {
-    display: none;
+  .nav-link {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .title {
+    font-size: 0.75rem;
+  }
+  .title-container {
+    padding: auto;
+    font-size: 0.5rem;
   }
 }
 
@@ -160,7 +187,9 @@ section .card {
   color: #06fdd8;
 }
 
+/* 
 .carousel-caption {
+  //font-size: 3em;
   top: 50%;
   transform: translateY(-50%);
   bottom: initial;
@@ -170,12 +199,11 @@ section .card {
   padding: 1em;
   background-color: #ffffff49;
 }
-
 .carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
   padding: 1em;
   background-color: #ffffff88;
 }
-
+ */
 .portfolio-card, .skill-card, .services-card, .tool-card {
   background-color: transparent;
   border: transparent;
@@ -281,12 +309,7 @@ h1, h2, h3 {
   text-align: left;
 }
 
-.title-container {
-  margin-top: 2em;
-}
-
 .title {
-  font-size: 90px;
   text-shadow: 2px 2px 2px #06fdd8, -2px -2px 2px #141010;
 }
 
@@ -380,7 +403,7 @@ h4 {
 
 .container-section {
   backdrop-filter: blur(5px);
-  background-color: rgba(255, 255, 255, 0.075);
+  background-color: rgba(255, 255, 255, 0.199);
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
   border: 0px rgba(255, 255, 255, 0.4) solid;
   border-bottom: 0px rgba(40, 40, 40, 0.35) solid;
@@ -800,5 +823,24 @@ input:checked + .slider:before {
 .progress {
   height: 10px;
   width: 50%;
+}
+
+/* MODAL SLIDES */
+.carousel {
+  width: 100%;
+  height: 100%;
+}
+
+/* .slide {
+  //position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms; */
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 /*# sourceMappingURL=main.css.map */

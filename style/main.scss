@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin:0;
   padding:0;
+  scroll-behavior: smooth;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Staatliches&display=swap');
@@ -44,6 +45,7 @@ body {
     background-size: cover;*/
   background-color: $color1;
   color: #FFFFFF;
+  //color: $color1;
   a {
     text-decoration: none;
     color: $color3;
@@ -82,7 +84,7 @@ $shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     //width: fit-content;
     overflow-y: scroll;
   }
-
+/* 
   .nav-glass {
     //background: #f5f5f59f;
     border-radius: 0 0 16px 16px;
@@ -91,8 +93,23 @@ $shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-top: 0;
+} */
+#primary-nav {
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
 }
+
+.shrink {
+  background-color: $lavender;
+  .nav-link {
+    color: #070339 !important;
+  }
+
+}
+
 .navbar {
+  backdrop-filter: blur(5px);
   padding: 0;
 }
 .navbar-collapse, .nav-container {
@@ -100,9 +117,9 @@ $shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   align-items: center;
 }
 .nav-link {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  color: #070339 !important;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: #f2f2f2 !important;
   &:focus {
     color: $color6;
   }
@@ -112,10 +129,6 @@ $shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-bottom: solid $color6;
     background-color: rgba(0, 0, 0, 0.205);
   }
-}
-.sticky-top {
-  background-color: #f5f5f59f;
-  //position: relative;
 }
 
 .logo {
@@ -163,16 +176,40 @@ section {
 
 
   .header {
+    //background-color: $color1;
+
+    //background-image: url(../img/svg/black_wave.svg);
+    //background-image: url(../img/slide/slide1.jpeg);
+    //background-repeat: no-repeat;
+    //background-size: cover;
+    //background-position: center;
     width: 100%;
     height: 100%;
     margin: 0;
-    position: relative;
-    top: -5em;
+    padding: 1em;
+    backdrop-filter: blur(5px);
   } 
 
+  .skills-icon {
+    i {
+      font-size: 2.5rem;
+      margin-right: 0.5em;
+      margin-left: 0.5em;
+    }
+
+  }
+
   @media all and (max-width: 800px) { 
-    .header {  
-      display: none;
+    .nav-link {
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+    .title {  
+      font-size: 0.75rem;
+    }
+    .title-container {
+      padding: auto;
+      font-size: 0.5rem;
     }
   }
 
@@ -184,6 +221,7 @@ section {
   }
 }
 
+/* 
 .carousel-caption {
   //font-size: 3em;
   top: 50%;
@@ -199,7 +237,7 @@ section {
   padding: 1em;
   background-color: #ffffff88;
 }
-
+ */
 .portfolio-card,.skill-card, .services-card, .tool-card {
   background-color: transparent;
   border: transparent;
@@ -304,13 +342,9 @@ h1, h2, h3, h4, h5 {
       //background-color: rgba(45, 45, 45, 0.1);
 
   }
-  
-  .title-container {
-    margin-top: 2em;
-  }
+
 
   .title {
-    font-size: 90px;
     text-shadow: 2px 2px 2px $color6, -2px -2px 2px $color1;
   }
 
@@ -410,7 +444,8 @@ h1, h2, h3, h4, h5 {
   .container-section {
     //background-color: $color2;
     backdrop-filter: blur(5px);
-    background-color: rgba(255,255,255, 0.075);
+    background-color: rgba(255, 255, 255, 0.199);
+    //background-color: #7952b3a2;
     box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
     border: 0px rgba(255,255,255,0.4) solid;
     border-bottom: 0px rgba(40,40,40,0.35) solid;
@@ -839,3 +874,23 @@ input:checked + .slider:before {
   height: 10px;
   width: 50%;
 }
+
+/* MODAL SLIDES */
+.carousel {
+  width: 100%;
+  height: 100%;
+}
+/* .slide {
+  //position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms; */
+  img {
+      //display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+  }
+
