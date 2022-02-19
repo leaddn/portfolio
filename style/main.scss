@@ -75,6 +75,10 @@ $shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   background-color: rgba(0, 0, 0, 0.342);
 }
 
+.bg-purple {
+  background-color: $color7;
+}
+
   .content {
     display: flex;
     flex-direction: column;
@@ -158,6 +162,15 @@ $shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   &:hover {
     color: $color4;
     background-color: $color6;
+  }
+}
+.btn-outline-purple {
+  border-color: $color7;
+  color: $color3;
+  background-color: $color7;
+  &:hover {
+    background-color: transparent;
+    color: $color7;
   }
 }
 
@@ -427,11 +440,12 @@ h1, h2, h3, h4, h5 {
   
 .modal-section {
   backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.137);
+  //background-color: rgba(255, 255, 255, 0.137);
+  background-color: $color1;
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-  border: 0px rgba(255,255,255,0.4) solid;
-  border-bottom: 0px rgba(40,40,40,0.35) solid;
-  border-right: 0px rgba(40,40,40,0.35) solid;
+  //border: 0px rgba(255,255,255,0.4) solid;
+  //border-bottom: 0px rgba(40,40,40,0.35) solid;
+  //border-right: 0px rgba(40,40,40,0.35) solid;
   border-radius: 10px;
     //border-radius: 10px;
     width: 100%;
@@ -479,6 +493,7 @@ h1, h2, h3, h4, h5 {
 
 /* Hoverable card with button */
   .img-card-hover {
+    height: 12em;
     //background-size:contain;
     /*width: 100%;
     height: 8em;
@@ -489,7 +504,26 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
     align-items: center;
     .card-img-overlay {
-      visibility: hidden;
+      //visibility: hidden;
+      display: none;
+      padding: 0;
+
+      i {
+        display: none;
+      }
+  }
+  .overlay-text{
+    visibility: visible;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    //vertical-align: middle;
+    background-color: rgba(20, 20, 20, 0.7);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   &:hover, &:active, &:focus {
     transition: 0.2s;
@@ -499,16 +533,23 @@ h1, h2, h3, h4, h5 {
         padding: 0;
           visibility: visible;
           background-color: #06fdd854;
-          .overlay-text {
-            padding-top: 1em;
-            padding-bottom: 1em;
-            text-align: center;
-            vertical-align: middle;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          i {
+            display:inline;
+            border-radius: 50%;
+            padding: 1em;
             background-color: rgba(20, 20, 20, 0.7);
           }
-          .portfolio-hover-content {
-            align-items: center;
-          }
+      }
+      .overlay-text {
+        display: none;
+
+      }
+      .portfolio-hover-content {
+        align-items: center;
       }
   }
 }
