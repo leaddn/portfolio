@@ -503,6 +503,7 @@ h1, h2, h3, h4, h5 {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: $color3 solid;
     .card-img-overlay {
       //visibility: hidden;
       display: none;
@@ -540,7 +541,7 @@ h1, h2, h3, h4, h5 {
           i {
             display:inline;
             border-radius: 50%;
-            padding: 1em;
+            padding: 0.5em;
             background-color: rgba(20, 20, 20, 0.7);
           }
       }

@@ -453,6 +453,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: #f2f2f2 solid;
 }
 
 .img-card-hover .card-img-overlay {
@@ -495,7 +496,7 @@ h4 {
 .img-card-hover:hover .card-img-overlay i, .img-card-hover:active .card-img-overlay i, .img-card-hover:focus .card-img-overlay i {
   display: inline;
   border-radius: 50%;
-  padding: 1em;
+  padding: 0.5em;
   background-color: rgba(20, 20, 20, 0.7);
 }
 
