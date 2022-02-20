@@ -184,12 +184,11 @@ section .card {
     padding-top: 1em;
     padding-bottom: 1em;
   }
-  .title {
-    font-size: 0.75rem;
-  }
   .title-container {
     padding: auto;
-    font-size: 0.5rem;
+  }
+  .skills-icon > i {
+    font-size: smaller;
   }
 }
 
@@ -435,7 +434,6 @@ h4 {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  max-width: 100%;
 }
 
 .portfolio-card {
